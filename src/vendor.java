@@ -24,16 +24,16 @@ public class vendor {
 			System.out.println("Enter hardware/software depending on license used");
 			extern= s.nextLine();
 			if(extern.equals("hardware")) {
-				vendor_rate*=0.7;
+				vendor_rate*=1.3;
 			}
 			else if (extern.equals("software")) {
 				System.out.println("Enter used/proprietary depending on usage");
 				extern= s.nextLine();
 				if(extern.equals("used")) {
-					vendor_rate*=0.5;
+					vendor_rate*=1.5;
 				}
 				else if(extern.equals("proprietary")) {
-					vendor_rate=0;
+					vendor_rate*=2;
 				}
 			}
 			else {
